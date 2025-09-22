@@ -76,7 +76,7 @@ export const ProcessOptimizationSection = () => {
                 <div className="w-full h-full bg-gradient-to-br from-background to-background-light rounded-[2.5rem] p-8 flex flex-col items-center justify-center border border-border/20 relative overflow-hidden">
                   {/* Screen Content */}
                   <div className="relative z-10 flex flex-col items-center justify-center">
-                    <img src={logoPhone} alt="La Formula Capital Group" className="w-32 h-auto animate-pulse-glow" />
+                    <img src='https://www.laformulacg.net/images/brand/Mobile%20Formula.svg' alt="La Formula Capital Group" className="w-32 h-auto animate-pulse-glow" />
                   </div>
                   
                   {/* Screen Glow Effect */}
@@ -88,12 +88,12 @@ export const ProcessOptimizationSection = () => {
               </div>
               
               {/* Phone Shadow/Glow */}
-              <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] opacity-20 blur-2xl animate-pulse-glow" style={{ transform: 'rotate(12deg)' }} />
+              <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] opacity-0 blur-2xl animate-pulse-glow" style={{ transform: 'rotate(150deg)' }} />
               
               {/* Floating Elements Around Phone */}
-              <div className="absolute -top-8 -left-8 w-4 h-4 bg-gradient-primary rounded-full animate-float opacity-60" style={{ animationDelay: '0s' }} />
+              <div className="absolute -top-8 -left-8 w-4 h-4 bg-gradient-primary rounded-full animate-float opacity-60" style={{ animationDelay: '10s' }} />
               <div className="absolute -bottom-12 -right-6 w-6 h-6 bg-gradient-to-r from-secondary to-accent rounded-full animate-float opacity-40" style={{ animationDelay: '2s' }} />
-              <div className="absolute top-1/3 -right-12 w-3 h-3 bg-accent rounded-full animate-float opacity-50" style={{ animationDelay: '4s' }} />
+              <div className="absolute top-1/3 -right-12 w-3 h-3 bg-accent rounded-full animate-float opacity-50" style={{ animationDelay: '10s' }} />
             </div>
           </div>
         </div>

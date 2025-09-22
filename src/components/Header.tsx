@@ -13,12 +13,12 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/20">
+    <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/20 h-24">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logoOriginal} alt="La Formula Capital Group" className="h-10 w-auto" />
+            <img src='https://www.laformulacg.net/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75' alt="La Formula Capital Group" className="h-20 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

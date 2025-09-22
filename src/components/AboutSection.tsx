@@ -83,8 +83,8 @@ export const AboutSection = () => {
 
           {/* Visual Element */}
           <div className="relative">
-            <div className="relative z-10 glass-card p-8 rounded-3xl">
-              <div className="space-y-6">
+            <div className="relative z-10 glass-card p-8 rounded-3xl ml-36">
+              <div className="space-y-6 ">
                 <div className="text-center">
                   <div className="text-4xl font-bold gradient-text mb-2">15+</div>
                   <div className="text-muted-foreground">Years of Experience</div>
@@ -103,8 +103,8 @@ export const AboutSection = () => {
             </div>
             
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-primary rounded-full opacity-20 animate-pulse-glow" />
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-secondary to-accent rounded-full opacity-10 animate-float" />
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-primary rounded-full opacity-20 animate-pulse-glow ml-32" />
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-secondary to-accent rounded-full opacity-10 animate-float ml-32" />
           </div>
         </div>
       </div>
