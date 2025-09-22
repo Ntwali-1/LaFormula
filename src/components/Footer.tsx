@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import logoOriginal from '@/assets/logo-original.png';
 
 export const Footer = () => {
   return (
@@ -15,11 +15,10 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <img src={logo} alt="La Formula" className="h-12 w-12" />
-              <span className="text-xl font-bold gradient-text">LA FORMULA</span>
+              <img src={logoOriginal} alt="La Formula Capital Group" className="h-10 w-auto" />
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Enhancing business efficiency and competitiveness with specialized B2B solutions. Your success is our formula.
+              Enhancing business efficiency and competitiveness with specialized B2B solutions. La Formula Capital Group - Your success is our formula.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300">
@@ -98,7 +97,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border/20 text-center">
           <p className="text-muted-foreground">
-            © 2024 La Formula CG. All rights reserved. | 
+            © 2024 La Formula Capital Group. All rights reserved. | 
             <a href="#" className="ml-1 hover:text-primary transition-colors">Privacy Policy</a> | 
             <a href="#" className="ml-1 hover:text-primary transition-colors">Terms of Service</a>
           </p>

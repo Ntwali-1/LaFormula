@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import logoOriginal from '@/assets/logo-original.png';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -18,8 +18,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="La Formula" className="h-12 w-12" />
-            <span className="text-xl font-bold gradient-text">LA FORMULA</span>
+            <img src={logoOriginal} alt="La Formula Capital Group" className="h-10 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

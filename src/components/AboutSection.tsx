@@ -38,7 +38,7 @@ export const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                About <span className="gradient-text">La Formula</span>
+                About <span className="gradient-text">La Formula Capital Group</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                 We are a specialized consulting firm dedicated to enhancing business efficiency and competitiveness through innovative B2B solutions. Our comprehensive approach combines strategic planning, process optimization, and cutting-edge technology to deliver measurable results.

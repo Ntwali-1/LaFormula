@@ -1,15 +1,25 @@
 import { NetworkBackground } from './NetworkBackground';
+import networkGlobe from '@/assets/network-globe.png';
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <NetworkBackground />
       
+      {/* Main network globe background */}
+      <div 
+        className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-90"
+        style={{ 
+          backgroundImage: `url(${networkGlobe})`,
+          zIndex: 2
+        }}
+      />
+      
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background-light" style={{ zIndex: 2 }} />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-background-light/80" style={{ zIndex: 3 }} />
       
       {/* Floating elements */}
-      <div className="absolute inset-0" style={{ zIndex: 2 }}>
+      <div className="absolute inset-0" style={{ zIndex: 3 }}>
         <div className="floating-element" style={{ top: '20%', left: '10%', animationDelay: '0s' }} />
         <div className="floating-element" style={{ top: '60%', left: '85%', animationDelay: '2s' }} />
         <div className="floating-element" style={{ top: '30%', left: '70%', animationDelay: '4s' }} />
