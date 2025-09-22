@@ -1,5 +1,6 @@
 import { NetworkBackground } from './NetworkBackground';
 import networkGlobe from '@/assets/network-globe.png';
+import logoPhone from '@/assets/logo-original.png';
 
 export const HeroSection = () => {
   return (
@@ -47,9 +48,26 @@ export const HeroSection = () => {
             Learn More
           </button>
         </div>
-      </div>
+        </div>
 
-      {/* Scroll indicator */}
+        {/* Animated Phone Display */}
+        <div className="absolute bottom-32 right-8 md:bottom-24 md:right-16 animate-float" style={{ zIndex: 8, animationDelay: '1s' }}>
+          <div className="relative">
+            {/* Phone Frame */}
+            <div className="w-32 h-64 md:w-40 md:h-80 bg-gradient-to-b from-gray-800 to-gray-900 rounded-[2rem] p-2 shadow-2xl border border-gray-700 hover:scale-105 transition-transform duration-500">
+              {/* Screen */}
+              <div className="w-full h-full bg-gradient-to-br from-background to-background-light rounded-[1.5rem] p-4 flex flex-col items-center justify-center border border-border/20">
+                {/* Logo on phone screen */}
+                <img src={logoPhone} alt="La Formula Capital Group" className="w-20 h-auto md:w-24 animate-pulse-glow" />
+              </div>
+            </div>
+            
+            {/* Phone glow effect */}
+            <div className="absolute inset-0 bg-gradient-primary rounded-[2rem] opacity-20 blur-xl animate-pulse-glow" />
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" style={{ zIndex: 10 }}>
         <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-gradient-primary rounded-full mt-2 animate-pulse-glow" />

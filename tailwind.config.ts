@@ -93,8 +93,19 @@ export default {
             opacity: "0.7",
           },
           "50%": {
-            transform: "translateY(-20px) rotate(180deg)",
+            transform: "translateY(-20px) rotate(2deg)",
             opacity: "1",
+          },
+        },
+        "float-phone": {
+          "0%, 100%": {
+            transform: "translateY(0px) rotateY(0deg)",
+          },
+          "33%": {
+            transform: "translateY(-15px) rotateY(5deg)",
+          },
+          "66%": {
+            transform: "translateY(-8px) rotateY(-3deg)",
           },
         },
         "pulse-glow": {
@@ -140,6 +151,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "float": "float 6s ease-in-out infinite",
+        "float-phone": "float-phone 8s ease-in-out infinite",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
         "network-pulse": "network-pulse 4s ease-in-out infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out",
