@@ -73,7 +73,7 @@ Commit changes 💡
 
 Open a Pull Request 🚀
 
-<p align="center"> Made with ❤️ by <a href="https://github.com/Paolauwase-teta">Paola Uwase</a> </p>
+<p align="center"> Made with hardwork by <a href="https://github.com/Paolauwase-teta">Paola Uwase</a> </p>
 
 🔥 You can make this even cooler by:
 

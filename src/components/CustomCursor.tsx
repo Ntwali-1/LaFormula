@@ -5,7 +5,10 @@ const CustomCursor = () => {
   const [isHover, setIsHover] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    // Hide default cursor
+    document.body.style.cursor = "none";
+
+    const handleMouseMove = (e: MouseEvent) => {
       setPos({ x: e.clientX, y: e.clientY });
     };
     window.addEventListener("mousemove", handleMouseMove);
@@ -13,16 +16,16 @@ const CustomCursor = () => {
     const addHover = () => setIsHover(true);
     const removeHover = () => setIsHover(false);
 
-    // Attach hover events to interactive elements (e.g. links/buttons)
-    const interactiveEls = document.querySelectorAll("a, button");
-    interactiveEls.forEach(el => {
+    const interactiveEls = document.querySelectorAll("a, button,#logo");
+    interactiveEls.forEach((el) => {
       el.addEventListener("mouseenter", addHover);
       el.addEventListener("mouseleave", removeHover);
     });
 
     return () => {
+      document.body.style.cursor = "auto"; // restore default on unmount
       window.removeEventListener("mousemove", handleMouseMove);
-      interactiveEls.forEach(el => {
+      interactiveEls.forEach((el) => {
         el.removeEventListener("mouseenter", addHover);
         el.removeEventListener("mouseleave", removeHover);
       });
@@ -33,20 +36,20 @@ const CustomCursor = () => {
     <div>
       {/* Outer ring / circle */}
       <div
-        className="fixed pointer-events-none rounded-full border border-white/20 transition-all duration-300"
+        className="fixed pointer-events-none rounded-full border border-white/30 transition-transform duration-100 ease-out"
         style={{
-          width: isHover ? "80px" : "40px",
-          height: isHover ? "80px" : "40px",
-          left: pos.x - (isHover ? 40 : 20),
-          top: pos.y - (isHover ? 40 : 20),
-          borderColor: isHover ? "rgba(255,255,255,0.4)" : "rgba(255,255,255,0.2)",
+          width: isHover ? "60px" : "36px",
+          height: isHover ? "60px" : "36px",
+          left: pos.x - (isHover ? 30 : 18),
+          top: pos.y - (isHover ? 30 : 18),
+          borderColor: isHover ? "rgba(255,255,255,0.5)" : "rgba(255,255,255,0.3)",
           zIndex: 9999,
         }}
       />
 
       {/* Inner dot */}
       <div
-        className="fixed pointer-events-none rounded-full transition-all duration-150"
+        className="fixed pointer-events-none rounded-full transition-transform duration-75 ease-out"
         style={{
           width: "8px",
           height: "8px",

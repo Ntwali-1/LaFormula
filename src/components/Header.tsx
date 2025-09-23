@@ -18,7 +18,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src='https://www.laformulacg.net/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75' alt="La Formula Capital Group" className="h-20 w-auto" />
+            <img src='https://www.laformulacg.net/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75' alt="La Formula Capital Group" className="h-20 w-auto" id='logo'/>
           </div>
 
           {/* Desktop Navigation */}

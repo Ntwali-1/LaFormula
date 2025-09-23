@@ -183,6 +183,7 @@ All colors MUST be HSL.
   33% {
     transform: translateY(-15px) rotateY(5deg);
   }
+  
   66% {
     transform: translateY(-8px) rotateY(-3deg);
   }

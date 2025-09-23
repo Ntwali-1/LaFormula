@@ -68,34 +68,45 @@ export const ProcessOptimizationSection = () => {
           </div>
 
           {/* Phone Mockup Right */}
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="relative">
-              {/* Phone Frame */}
-              <div className="w-72 h-[580px] bg-gradient-to-b from-gray-800 via-gray-900 to-black rounded-[3rem] p-3 shadow-2xl border border-gray-700 transform rotate-12 hover:rotate-6 transition-transform duration-700 animate-float-phone">
-                {/* Screen */}
-                <div className="w-full h-full bg-gradient-to-br from-background to-background-light rounded-[2.5rem] p-8 flex flex-col items-center justify-center border border-border/20 relative overflow-hidden">
-                  {/* Screen Content */}
-                  <div className="relative z-10 flex flex-col items-center justify-center">
-                    <img src='https://www.laformulacg.net/images/brand/Mobile%20Formula.svg' alt="La Formula Capital Group" className="w-32 h-auto animate-pulse-glow" />
-                  </div>
-                  
-                  {/* Screen Glow Effect */}
-                  <div className="absolute inset-0 bg-gradient-primary opacity-5 animate-pulse" />
-                </div>
-                
-                {/* Home Indicator */}
-                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white/30 rounded-full" />
-              </div>
-              
-              {/* Phone Shadow/Glow */}
-              <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] opacity-0 blur-2xl animate-pulse-glow" style={{ transform: 'rotate(150deg)' }} />
-              
-              {/* Floating Elements Around Phone */}
-              <div className="absolute -top-8 -left-8 w-4 h-4 bg-gradient-primary rounded-full animate-float opacity-60" style={{ animationDelay: '10s' }} />
-              <div className="absolute -bottom-12 -right-6 w-6 h-6 bg-gradient-to-r from-secondary to-accent rounded-full animate-float opacity-40" style={{ animationDelay: '2s' }} />
-              <div className="absolute top-1/3 -right-12 w-3 h-3 bg-accent rounded-full animate-float opacity-50" style={{ animationDelay: '10s' }} />
-            </div>
-          </div>
+         {/* Phone Mockup Right */}
+<div className="relative flex justify-center lg:justify-end perspective-[2000px]">
+  <div className="relative">
+    {/* Back Phone */}
+    <div
+      className="absolute top-10 left-10 w-72 h-[580px] bg-gradient-to-b from-gray-700 via-gray-800 to-black rounded-[3rem] p-3 shadow-xl border border-gray-600"
+      style={{
+        transform: 'rotateX(18deg) rotateY(15deg) rotateZ(-6deg) scale(0.9)',
+        transformStyle: 'preserve-3d',
+      }}
+    >
+      <div className="w-full h-full bg-background rounded-[2.5rem]" />
+    </div>
+
+    {/* Front Phone */}
+    <div
+      className="relative w-72 h-[580px] bg-gradient-to-b from-gray-800 via-gray-900 to-black rounded-[3rem] p-3 shadow-2xl border border-gray-700"
+      style={{
+        transform: 'rotateX(20deg) rotateY(-15deg) rotateZ(5deg) scale(0.95)',
+        transformStyle: 'preserve-3d',
+      }}
+    >
+      <div className="w-full h-full bg-background rounded-[2.5rem] flex flex-col items-center justify-center relative overflow-hidden">
+        <img
+          src='https://www.laformulacg.net/images/brand/Mobile%20Formula.svg'
+          alt="La Formula Capital Group"
+          className="w-32 h-auto relative z-10"
+        />
+        <div className="absolute inset-0 bg-gradient-primary opacity-10 animate-pulse-slow" />
+      </div>
+
+      {/* Home Indicator */}
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white/20 rounded-full" />
+    </div>
+  </div>
+</div>
+
+
+
         </div>
       </div>
     </section>
