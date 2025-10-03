@@ -14,6 +14,10 @@
 
 🚀 Ready-to-deploy on Vercel / Netlify
 
+## Description
+
+**La Fórmula Encore** is a modern, visually stunning React template built with performance and aesthetics in mind. It combines a lightning-fast Vite development environment with a sleek, interactive UI featuring an animated custom cursor and dynamic gradient background. Perfect for portfolios, landing pages, or any project that demands a unique and engaging user experience.
+
 🛠️ Setup & Development
 Clone the Repo
 git clone https://github.com/<your-username>/<repo>.git
