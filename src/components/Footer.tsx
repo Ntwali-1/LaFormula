@@ -46,7 +46,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
           <div className="space-y-6">
             <h3 className="text-lg font-semibold gradient-text">Company</h3>
             <ul className="space-y-3 text-muted-foreground">
@@ -59,7 +58,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
           <div className="space-y-6">
             <h3 className="text-lg font-semibold gradient-text">Contact</h3>
             <div className="space-y-4">
@@ -94,7 +92,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border/20 text-center">
           <p className="text-muted-foreground">
             © 2024 La Formula Capital Group. All rights reserved. | 
