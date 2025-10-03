@@ -15,7 +15,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <img src='https://www.laformulacg.net/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75' alt="La Formula Capital Group" className="h-10 w-auto" />
+              <img src='https://www.laformulacg.net/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75' alt="La Formula Capital Group" className="h-20 w-max" />
             </div>
             <p className="text-muted-foreground leading-relaxed">
               Enhancing business efficiency and competitiveness with specialized B2B solutions. La Formula Capital Group - Your success is our formula.
